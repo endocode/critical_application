@@ -4,7 +4,7 @@
 int main (void) {
 	FILE* led = NULL;
 
-	led = fopen("/tmp/sys/class/leds/d3/brightness", "w");
+	led = fopen("/sys/class/leds/d3/brightness", "w");
 	if (led == NULL) {
 		perror("Error: ");
 		return(1);
